@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/menu"
+            android:title="@string/nav_profile" />
+        <item
+            android:id="@+id/nav_transactions"
+            android:icon="@drawable/menu"
+            android:title="@string/nav_transactions" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/menu"
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_promotions"
+            android:icon="@drawable/menu"
+            android:title="Promotions" />
+        <item
+            android:id="@+id/nav_genierewards"
+            android:icon="@drawable/menu"
+            android:title="Genie Rewards" />
+        <item
+            android:id="@+id/nav_eliteclub"
+            android:icon="@drawable/menu"
+            android:title="Elite Club" />
+        <item
+            android:id="@+id/nav_tipgenie"
+            android:icon="@drawable/menu"
+            android:title="Tip Genie" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/menu"
+            android:title="Help">
+            <menu>
+                <item
+                    android:id="@+id/nav_sub_reportissue"
+                    android:icon="@drawable/menu"
+                    android:title="Report an issue with this Transaction" />
+                <item
+                    android:id="@+id/nav_sub_support"
+                    android:icon="@drawable/menu"
+                    android:title="Support" />
+                <item
+                    android:id="@+id/nav_sub_faqs"
+                    android:icon="@drawable/menu"
+                    android:title="FAQs" />
+                <item
+                    android:id="@+id/nav_sub_feedback"
+                    android:icon="@drawable/menu"
+                    android:title="Feedback" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_legal"
+            android:icon="@drawable/menu"
+            android:title="@string/nav_legal">
+            <menu>
+                <item
+                    android:id="@+id/nav_sub_aboutus"
+                    android:icon="@drawable/menu"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/nav_sub_tc"
+                    android:icon="@drawable/menu"
+                    android:title="Terms and Conditions" />
+                <item
+                    android:id="@+id/nav_sub_pp"
+                    android:icon="@drawable/menu"
+                    android:title="Privacy Policy" />
+                <item
+                    android:id="@+id/nav_sub_rcp"
+                    android:icon="@drawable/menu"
+                    android:title=" Refund &amp; Cancellations Policy" />
+                <item
+                    android:id="@+id/nav_sub_lip"
+                    android:icon="@drawable/menu"
+                    android:title="Location Information Policy" />
+                <item
+                    android:id="@+id/nav_sub_dp"
+                    android:icon="@drawable/menu"
+                    android:title="Data Providers" />
+                <item
+                    android:id="@+id/nav_sub_sl"
+                    android:icon="@drawable/menu"
+                    android:title="Software License" />
+                <item
+                    android:id="@+id/nav_sub_copyright"
+                    android:icon="@drawable/menu"
+                    android:title="Copyright" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_alerts"
+            android:icon="@drawable/menu"
+            android:title="Alerts" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/menu"
+            android:title="@string/nav_settings" />
+        <item
+            android:id="@+id/nav_referandearn"
+            android:icon="@drawable/menu"
+            android:title="Refer &amp; Earn" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/menu"
+            android:title="Logout" />
+    </group>
+
+</menu>

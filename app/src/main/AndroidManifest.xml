@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.main.genietalk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".manager.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activity.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER"
+                    android:launchMode="singleInstance" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PasswordSetActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category-->
+                    <!--android:name="android.intent.category.LAUNCHER"-->
+                    <!--android:launchMode="singleInstance" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".activity.PasswordConfirmActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".activity.PasswordCheck"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+            android:name=".activity.AndroidHTMLActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ChatActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+
+        </activity>
+        <!-- android:windowSoftInputMode="adjustPan"-->
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.CustomPinActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".expandable.ProfileActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".expandable.Main2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".expandable.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".activity.ReferEarn"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.NotificationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.HelpActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.LegalActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.TieGenieActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.PromotionsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.TransactionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.WalletActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EliteClubActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.HelpDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.LegalDetailActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.TierMembershipActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.MemberBenifitsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.BusinessProfileActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ReportAnIssueActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.ThemeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.NotificationSettingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.AddPaymentMethodActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.AddCardActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.AddMemberActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.VoiceRecognitionActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <service android:name=".service.LocationMonitoringService"></service>
+
+        <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- ./Firebase Notifications -->
+
+    </application>
+
+</manifest>

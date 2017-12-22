@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/rl_enable_finger_print"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:paddingTop="2dp"
+            android:src="@drawable/fingerprint" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@android:color/black"
+            android:text="@string/finger_print_txt1"
+            android:textAlignment="center" />
+        <TextView
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@android:color/black"
+            android:text="@string/finger_print_txt2"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_above="@+id/ll_bottom_view"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="@string/finger_print_txt3"
+        android:textAlignment="center" />
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/ll_bottom_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_not_now"
+            android:background="@color/blue"
+            android:padding="@dimen/dp_10"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/not_now"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_1"
+            />
+        <TextView
+            android:id="@+id/tv_link_fp"
+            android:textSize="@dimen/sp_14"
+            android:background="@color/blue"
+            android:padding="@dimen/dp_10"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/finger_print_link"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</RelativeLayout>
+<include layout="@layout/fragment_touchid_go"
+    android:visibility="gone"
+    android:id="@+id/layout_finger_print_done"/>
+
+</RelativeLayout>

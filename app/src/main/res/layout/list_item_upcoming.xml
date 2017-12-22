@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginLeft="10dp">
+       <TextView
+           android:id="@+id/transactionTV"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/icons"
+           android:text="#123456977"
+           android:layout_marginTop="7dp"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/flightNameTV"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/icons"
+                   android:text="Indigo flight booking"
+                   android:textSize="@dimen/sp_12"/>
+               <TextView
+                   android:id="@+id/flightDateTV"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/icons"
+                   android:text="30 Nov 2017,9:00PM"
+                   android:textSize="@dimen/sp_9"
+                   />
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/flightPriceTV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/icons"
+               android:text="\u20B9 5000"
+               android:layout_centerHorizontal="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="50dp"/>
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_right_arrow_gold"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="15dp"
+               />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/primary_dark"
+           android:text="Your order is successful"
+           />
+           <TextView
+               android:id="@+id/helpBtn"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/gold"
+               android:text="Help"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="15dp"
+               />
+
+       </RelativeLayout>
+   </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider"
+            android:layout_marginTop="8dp"></View>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

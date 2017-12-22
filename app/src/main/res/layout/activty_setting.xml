@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/screenId">
+
+    <include layout="@layout/header"></include>
+
+    <LinearLayout
+        android:id="@+id/headerLL1"
+        android:background="@color/profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/headerTV1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="@string/enable_password_protection"
+            android:textColor="#FFF"
+            android:textSize="@dimen/sp_14"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Switch
+                android:id="@+id/setpass_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pass_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/passwordRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/profile_header"
+                android:layout_marginTop="1dp"
+                >
+                <TextView
+                    android:id="@+id/passwordTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Password"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/sp_12"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_right_arrow_gold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/icons"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/changePasswordRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/profile_header"
+                android:layout_marginTop="1dp"
+                >
+                <TextView
+                    android:id="@+id/changePasswordTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disable Password"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/sp_12"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_right_arrow_gold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/icons"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/fingerPrintRL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/profile_header"
+                android:layout_marginTop="1dp"
+                >
+                <TextView
+                    android:id="@+id/setFingerPrintTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set FingerPrint"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/sp_12"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_right_arrow_gold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/icons"/>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/radio_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:padding="5dp"
+                android:text="Set PIN"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btn_disablepin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:visibility="gone"
+                android:padding="5dp"
+                android:text="Disable PIN"
+                android:textColor="#FFF"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/radio_finger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:padding="5dp"
+            android:text="Set FingerPrint"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/themeRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/profile_header"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/headerTV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Theme"
+            android:textColor="@color/icons"
+            android:textSize="@dimen/sp_12"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_arrow_gold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/icons"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/notificationSettingRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/profile_header"
+        android:layout_marginTop="1dp">
+        <TextView
+            android:id="@+id/headerTV3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textColor="@color/icons"
+            android:textSize="@dimen/sp_12"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_arrow_gold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/icons"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/logoutRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/profile_header"
+        android:layout_marginTop="1dp">
+        <TextView
+            android:id="@+id/headerTV4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@color/icons"
+            android:textSize="@dimen/sp_12"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_arrow_gold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/icons"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/removeRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/profile_header"
+        android:layout_marginTop="1dp">
+        <TextView
+            android:id="@+id/headerTV5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/remove_my_account"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_12"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_arrow_gold"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/icons"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

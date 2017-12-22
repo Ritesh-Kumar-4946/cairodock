@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "977231680814",
+    "firebase_url": "https://genietalk-push-notifications.firebaseio.com",
+    "project_id": "genietalk-push-notifications",
+    "storage_bucket": "genietalk-push-notifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977231680814:android:16f1abd560ef772b",
+        "android_client_info": {
+          "package_name": "com.main.genietalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977231680814-isu6f3skigu4o5aab7ukriemn72o03ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh5VJgwVnKsjHy8w9aiB-aRQOU1svrpWI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

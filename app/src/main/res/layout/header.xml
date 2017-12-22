@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/headerRL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/profile_header">
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/topbackarrow"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/headerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/gold"
+            android:textStyle="normal"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:id="@+id/screenId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/header"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp"
+                        android:weightSum="10">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="5">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Member of"
+                                android:textColor="@color/secondary_text"
+                                android:textStyle="normal"
+                                android:layout_centerVertical="true"
+
+
+                                />
+                            <EditText
+                                android:id="@+id/addMemberET"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:padding="5dp"
+                                android:drawableBottom="@color/icons"
+                                android:layout_marginTop="5dp"
+                                android:text="Loise Club"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="5">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Member Name"
+                                android:textColor="@color/secondary_text"
+                                android:textStyle="normal"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                />
+                            <EditText
+                                android:id="@+id/memberNameET"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:padding="5dp"
+                                android:drawableBottom="@color/icons"
+                                android:layout_marginTop="5dp"
+                                android:text="Isac cannon"
+
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp"
+                        android:weightSum="10">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="5">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Membership no"
+                                android:textColor="@color/secondary_text"
+                                android:textStyle="normal"
+                                android:layout_centerVertical="true"
+
+
+                                />
+                            <EditText
+                                android:id="@+id/memberShipNoET"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:padding="5dp"
+                                android:drawableBottom="@color/icons"
+                                android:layout_marginTop="5dp"
+                                android:text="1234578844"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="5">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Expiration Date"
+                                android:textColor="@color/secondary_text"
+                                android:textStyle="normal"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                />
+                            <EditText
+                                android:id="@+id/expireDateET"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:padding="5dp"
+                                android:drawableBottom="@color/icons"
+                                android:layout_marginTop="5dp"
+                                android:text="07/12/2018"
+                                android:drawableLeft="@drawable/edit"
+                                android:drawablePadding="5dp"
+
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Details"
+                        android:textColor="@color/secondary_text"
+                        android:textStyle="normal"
+                        android:layout_centerVertical="true"
+                        />
+                    <EditText
+                        android:id="@+id/descriptionET"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:drawableBottom="@color/secondary_text"
+                        android:text="@string/description"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:weightSum="10">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="5">
+                        <Button
+                            android:id="@+id/benifitsBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:text="CANCEL"
+                            android:textColor="@color/primary_text"
+                            android:background="@color/gold"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="5">
+                        <Button
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:text="SAVE"
+                            android:textColor="@color/primary_text"
+                            android:background="@color/gold"
+                            />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

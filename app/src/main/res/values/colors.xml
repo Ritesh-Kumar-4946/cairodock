@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B6B6B6</color>
+    <color name="colorPrimaryDark">#B6B6B6</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+
+    <color name="header_bg_color1">#F0F5F8</color>
+    <color name="blue_01">#B5CCE2</color>
+    <color name="blue_02">#1C5FC1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_03">#C3CACE</color>
+    <color name="grey_04">#EDEFEF</color>
+    <color name="grey_05">#C0C7CB</color>
+    <color name="grey_06">#808788</color>
+    <color name="grey_07">#404448</color>
+    <color name="transparent">#0DFFFFFF</color>
+    <color name="alpha_50_blue02">#504E94BA</color>
+    <color name="alpha_50_grey_06">#50808788</color>
+    <color name="alpha_50_black_06">#70000000</color>
+    <color name="red">#FF0000</color>
+    <color name="grey_bg">#EEEFEF</color>
+    <color name="grey_00">#8D9092</color>
+    <color name="grey_01">#757B7C</color>
+    <color name="blue">#004BBB</color>
+    <color name="card_bg_color">#04131e</color>
+    <!--apps-->
+
+
+    <color name="primary">#4CAF50</color>
+    <color name="primary_dark">#388E3C</color>
+    <color name="primary_light">#C8E6C9</color>
+    <color name="accent">#FFEB3B</color>
+    <color name="primary_text">#212121</color>
+    <color name="black_theme_bg">#04131e</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="subtitle_color">#a3a3a3</color>
+
+
+    <color name="divider">#36424b</color>
+    <color name="gold">#f0c894</color>
+    <color name="profile_header">#3b3b3b</color>
+    <!--Dark Theme array-->
+    <color name="bg_color">#04131e</color>
+    <color name="user_reply_color">#F0C894</color>
+    <color name="genie_reply_color">#F0C894</color>
+    <color name="time_stamp">#F6F6F6</color>
+    <color name="header_bg_color">#17232c</color>
+    <color name="header_title_color">#F0C894</color>
+    <color name="tab_bg_color">#17232c</color>
+    <color name="tab_general_txt_color">#F6F6F6</color>
+    <color name="tab_selected_txt_color">#F0C894</color>
+    <color name="view_header_bottom_line_color">#4e4e4e</color>
+    <color name="tv_cell_seprator_line_color">#36424b</color>
+    <color name="tv_cell_selection_header_color">#17232c</color>
+    <color name="lbl_title_white_color">#FFFFFF</color>
+    <color name="lbl_title_color">#cacaca</color>
+    <color name="lbl_subtitle_color">#a3a3a3</color>
+    <color name="lbl_title_gold_color">#F0C894</color>
+
+
+    <!--keyboard color codes (Start)-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSelect">#EBC692</color>
+    <color name="colorgrey">#d1cfcf</color>
+    <!--keyboard color codes (End)-->
+
+</resources>
