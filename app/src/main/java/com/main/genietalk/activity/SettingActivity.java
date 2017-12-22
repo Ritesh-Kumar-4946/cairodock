@@ -252,6 +252,7 @@ public class SettingActivity extends BaseActivity implements AuthenticationCallb
                     disablefinger = true;
                     initFingerPrint();
                 } else {
+
                     initFingerPrint();
                 }
             }

@@ -72,6 +72,8 @@ public class SplashScreen extends AppCompatActivity implements AuthenticationCal
             startActivityForResult(intent,REQUEST_CODE_SUCCESS);*/
             Intent intent = new Intent(this,PasswordCheck.class);
             startActivity(intent);
+
+
             finish();
         }
         else
